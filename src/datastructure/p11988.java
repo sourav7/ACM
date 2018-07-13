@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
-class Main {
+public class Problem11988 {
 	public static PrintWriter pw = new PrintWriter(System.out);
 
 	public static void main(String[] args) throws IOException {
