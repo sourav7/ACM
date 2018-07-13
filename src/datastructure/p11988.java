@@ -6,6 +6,12 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
+/**
+ * Broken Keyboard (a.k.a Beiju Text).
+ *
+ * @author Sourav Debnath
+ */
+
 public class Problem11988 {
 	public static PrintWriter pw = new PrintWriter(System.out);
 
