@@ -19,12 +19,12 @@ public class Problem11988 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String input = null;
 		while ((input = br.readLine()) != null) {
-			getBijuText(input);
+			printBeijuText(input);
 		}
 		pw.close();
 	}
 
-	private static void getBijuText(String input) {
+	private static void printBeijuText(String input) {
 		char[] inputArray = input.toCharArray();
 		LinkedList<Character> list = new LinkedList<>();
 		StringBuilder sb = new StringBuilder("");
