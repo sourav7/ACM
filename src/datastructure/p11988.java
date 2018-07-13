@@ -15,6 +15,7 @@ public class Problem11988 {
 		while ((input = br.readLine()) != null) {
 			getBijuText(input);
 		}
+		pw.close();
 	}
 
 	private static void getBijuText(String input) {
