@@ -90,8 +90,8 @@ public class Problem10178 {
 
 			DisjointSetOfVertex dj = new DisjointSetOfVertex(node);
 			for (int i = 0; i < edge; i++) {
-				st = new StringTokenizer(br.readLine(), " ");
-				dj.makeFace(st.nextToken().charAt(0), st.nextToken().charAt(0));
+				input = br.readLine();
+				dj.makeFace(input.charAt(0), input.charAt(2));
 			}
 			sb.append(dj.getNumberOfPlane() + "\n");
 		}
