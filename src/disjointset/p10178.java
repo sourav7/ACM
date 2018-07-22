@@ -33,9 +33,6 @@ class DisjointSetOfVertex {
 
 	public DisjointSetOfVertex(int n) {
 		map = new TreeMap<>();
-		for (char i = 'A'; i < n; i++) {
-			makeSet(i);
-		}
 	}
 
 	public void makeFace(char a, char b) {
