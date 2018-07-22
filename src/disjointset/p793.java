@@ -76,7 +76,6 @@ public class Problem793 {
 		StringTokenizer st = null;
 		br.readLine();
 		while (tc-- > 0) {
-			// br.readLine();
 
 			int computers = Integer.parseInt(br.readLine());
 			DisJoint dj = new DisJoint(computers);
