@@ -5,18 +5,19 @@ import java.io.PrintWriter;
 import java.util.Map;
 import java.util.StringTokenizer;
 import java.util.TreeMap;
+
 /**
  * Count The Faces
  * 
- * @author Sourav Debnath
+ * @author CSE
  *
  */
 class Vertex {
-	int data;
+	char data;
 	int rank;
 	Vertex parent;
 
-	public Vertex(int data) {
+	public Vertex(char data) {
 		this.data = data;
 		this.parent = this;
 		this.rank = 0;
@@ -67,9 +68,9 @@ class DisjointSetOfVertex {
 		return v.parent = findSet(v.parent);
 	}
 
-	private Vertex makeSet(char i) {
-		Vertex v = new Vertex(i);
-		map.put(i, v);
+	private Vertex makeSet(char data) {
+		Vertex v = new Vertex(data);
+		map.put(data, v);
 		return v;
 	}
 }
