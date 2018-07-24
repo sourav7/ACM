@@ -13,7 +13,6 @@ import java.util.StringTokenizer;
 public class Problem12428 {
 
 	private static PrintWriter pw = new PrintWriter(System.out);
-	public final static Scanner STDIN_SCANNER = new Scanner(System.in);
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 
