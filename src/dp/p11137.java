@@ -20,7 +20,6 @@ public class Problem11137 {
 			int n = reader.nextInteger();
 			System.out.println(cubrency.getNumberOfWays(n));
 		}
-
 	}
 }
 
