@@ -20,7 +20,6 @@ public class Problem11137 {
 			int n = reader.nextInteger();
 			System.out.println(cubrency.getNumberOfWays(n));
 		}
-
 	}
 }
 
@@ -52,9 +51,7 @@ class IngenuousCubrency {
 				resultArray[start] = resultArray[start] + resultArray[start - currentCoin];
 				start++;
 			}
-
 		}
-
 	}
 
 	private void makeCoins() {
