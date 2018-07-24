@@ -20,6 +20,7 @@ public class Problem11137 {
 			int n = reader.nextInteger();
 			System.out.println(cubrency.getNumberOfWays(n));
 		}
+
 	}
 }
 
@@ -28,41 +29,28 @@ class IngenuousCubrency {
 
 	private final int MAX_LIMIT = 10002;
 	private int coinIndexLimit = 0;
-	private long resultArray[][];
+	private long resultArray[];
 
 	public IngenuousCubrency(int numberOfCoins) {
 		this.coinIndexLimit = numberOfCoins + 1;
-		resultArray = new long[coinIndexLimit][MAX_LIMIT];
+		resultArray = new long[MAX_LIMIT];
 		this.makeCoins();
 		this.generateResult();
 	}
 
 	public long getNumberOfWays(int amount) {
-		return this.resultArray[findIndex(amount)][amount];
-	}
-
-	private int findIndex(int n) {
-		int coinIndex = 0;
-		for (int i = 1; i < this.coinIndexLimit; i++) {
-			if (coins[i] <= n)
-				coinIndex++;
-		}
-		return coinIndex;
+		return this.resultArray[amount];
 	}
 
 	private void generateResult() {
+		resultArray[0] = 1;
 		for (int i = 1; i < coinIndexLimit; i++) {
-			resultArray[i][0] = 1;
 			int currentCoin = coins[i];
-			int j = 1;
+			int start = currentCoin;
 
-			while (j < currentCoin) {
-				resultArray[i][j] = resultArray[i - 1][j];
-				j++;
-			}
-			while (j < MAX_LIMIT) {
-				resultArray[i][j] = resultArray[i - 1][j] + resultArray[i][j - currentCoin];
-				j++;
+			while (start < MAX_LIMIT) {
+				resultArray[start] = resultArray[start] + resultArray[start - currentCoin];
+				start++;
 			}
 
 		}
