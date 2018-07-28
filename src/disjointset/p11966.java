@@ -1,6 +1,6 @@
 
 import java.io.IOException;
-import dp.ReaderClass;
+import reader.ReaderClass;
 
 class Star {
 	double x;
