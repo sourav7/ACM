@@ -2,6 +2,12 @@
 import java.io.IOException;
 import reader.ReaderClass;
 
+/**
+ * Galactic Bonding
+ * 
+ * @author Sourav Debnath
+ *
+ */
 class Star {
 	double x;
 	double y;
