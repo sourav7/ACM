@@ -8,20 +8,6 @@ import reader.ReaderClass;
  * @author Sourav Debnath
  *
  */
-class Star {
-	double x;
-	double y;
-	Star parent;
-	int rank;
-
-	public Star(double x, double y) {
-		this.x = x;
-		this.y = y;
-		this.parent = this;
-		this.rank = 0;
-	}
-}
-
 public class Problem11966 {
 	public static Star[] stars = new Star[1002];
 
@@ -76,5 +62,19 @@ public class Problem11966 {
 			parentA.parent = parentB;
 		}
 		return true;
+	}
+}
+
+class Star {
+	double x;
+	double y;
+	Star parent;
+	int rank;
+
+	public Star(double x, double y) {
+		this.x = x;
+		this.y = y;
+		this.parent = this;
+		this.rank = 0;
 	}
 }
