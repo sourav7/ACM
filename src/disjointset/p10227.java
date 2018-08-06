@@ -11,7 +11,7 @@ import java.util.TreeSet;
  * @author Sourav Debnath
  *
  */
-public class Problem10227 {
+public class Problem_10227 {
 	private static SortedSet<Integer> adjList[] = new SortedSet[103];
 
 	public static void main(String[] args) throws IOException {
