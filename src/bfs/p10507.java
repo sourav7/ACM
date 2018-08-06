@@ -76,12 +76,12 @@ public class Problem_11690 {
 				BrainArea child = map.get(ch);
 
 				if (child.activeConnection < 3) {
-					child.year = Math.max(child.year, current.year + 1);
+					child.year = current.year + 1;
 
 					child.activeConnection += 1;
 					if (child.activeConnection == 3) {
+						result = child.year;
 						q.add(child);
-						result = Math.max(result, child.year);
 					}
 				}
 			}
